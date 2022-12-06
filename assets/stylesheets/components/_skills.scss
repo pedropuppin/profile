@@ -1,0 +1,41 @@
+.skill {
+  padding: 200px 0;
+  position: relative;
+  background-color: #121212;
+
+  h2 {
+    font-size: 45px;
+    font-weight: 700;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 2px;
+  }
+
+  p {
+    color: #B8B8B8;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+    margin: 14px 0 75px 0;
+}
+}
+
+.skill-bx {
+  background-image: url('img-noise.png');
+  border-radius: 64px;
+  text-align: center;
+  padding: 60px 50px;
+  margin-top: -60px;
+}
+
+.swiper {
+  .swiper-slide img {
+    width: 100px;
+    margin: 0 auto 15px auto;
+  }
+}
+
+@media (max-width: 390px) {
+  .swiper-wrapper {
+    width: 390px;
+  }
+}
