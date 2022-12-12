@@ -139,7 +139,17 @@ span.navbar-text {
   width: 20%;
 }
 
-.navbar .collapse {
-  margin-left: 0;
+  .navbar .collapse {
+    margin-left: 0;
+  }
 }
+
+@media (max-width: 1366px) {
+  .navbar .navbar-brand {
+    width: 13%;
+  }
+
+  .navbar .collapse {
+    margin-left: 580px;
+  }
 }
