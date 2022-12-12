@@ -17,3 +17,17 @@
   letter-spacing: 0.5px;
   margin-top: 20px;
 }
+
+@media (max-width: 390px) {
+  .footer img {
+    width: 40%;
+  }
+
+   .footer .social-icons {
+     margin: 0;
+   }
+
+   .footer p {
+    display: none;
+   }
+ }

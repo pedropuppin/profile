@@ -12,19 +12,19 @@ var swiper = new Swiper('.swiper', {
     },
   },
   breakpoints: {
-    "@0.00": {
+    375: {
       slidesPerView: 1,
-      spaceBetween: 10,
-    },
-    "@0.75": {
-      slidesPerView: 2,
       spaceBetween: 20,
     },
-    "@1.00": {
-      slidesPerView: 3,
+    395: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 2,
       spaceBetween: 40,
     },
-    "@1.50": {
+    1024: {
       slidesPerView: 3,
       spaceBetween: 50,
     },
@@ -33,7 +33,7 @@ var swiper = new Swiper('.swiper', {
 
 function getDirection() {
   var windowWidth = window.innerWidth;
-  var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
+  var direction = window.innerWidth <= 760 ? 'horizontal' : 'horizontal';
 
   return direction;
 }
@@ -47,7 +47,7 @@ window.addEventListener('scroll', () => {
 })
 
 var typed = new Typed('#typed', {
-  strings: ["Hi there!", "I'm Pedro Puppin"],
+  strings: ["Hi there,", "I'm Pedro!", "Fulls-Stack", "Web Dev."],
   typeSpeed: 50,
   loop: true
 });
