@@ -33,7 +33,7 @@ var swiper = new Swiper('.swiper', {
 
 function getDirection() {
   var windowWidth = window.innerWidth;
-  var direction = window.innerWidth <= 760 ? 'horizontal' : 'horizontal';
+  var direction = 'horizontal'
 
   return direction;
 }
@@ -46,8 +46,15 @@ window.addEventListener('scroll', () => {
   }
 })
 
+
+if (window.innerWidth >= 1500) {
+  strings = ["Hi there, I'm Pedro!", "Full-Stack, Web Dev."]
+} else {
+  strings = ["Hi there,", "I'm Pedro!", "Full-Stack", "Web Dev."]
+}
+
 var typed = new Typed('#typed', {
-  strings: ["Hi there,", "I'm Pedro!", "Fulls-Stack", "Web Dev."],
+  strings,
   typeSpeed: 50,
   loop: true
 });
