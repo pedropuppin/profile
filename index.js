@@ -46,7 +46,6 @@ window.addEventListener('scroll', () => {
   }
 })
 
-
 if (window.innerWidth >= 1500) {
   strings = ["Hi there, I'm Pedro!", "Full-Stack, Web Dev."]
 } else {
