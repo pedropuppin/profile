@@ -16,7 +16,7 @@ var swiper = new Swiper('.swiper', {
       slidesPerView: 1,
       spaceBetween: 20,
     },
-    395: {
+    480: {
       slidesPerView: 1,
       spaceBetween: 20,
     },
@@ -46,8 +46,8 @@ window.addEventListener('scroll', () => {
   }
 })
 
-if (window.innerWidth >= 1500) {
-  strings = ["Hi there, I'm Pedro!", "Full-Stack, Web Dev."]
+if (window.innerWidth >= 1400) {
+  strings = ["Hi there, I'm Pedro!", "Full-Stack Web Dev."]
 } else {
   strings = ["Hi there,", "I'm Pedro!", "Full-Stack", "Web Dev."]
 }

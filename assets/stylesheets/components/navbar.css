@@ -133,23 +133,46 @@ span.navbar-text {
 }
 
 
-
-@media (max-width: 390px) {
+/* Smartphones Mobiles */
+@media (min-width: 320px) and (max-width: 480px) {
  .navbar .navbar-brand {
-  width: 25%;
-}
+    width: 25%;
+  }
 
   .navbar .collapse {
     margin-left: 0;
   }
 }
 
-@media (max-width: 1366px) {
+/* Tablets */
+@media (min-width: 768px) and (max-width: 990px) {
   .navbar .navbar-brand {
-    width: 13%;
+    width: 15%;
   }
 
   .navbar .collapse {
-    margin-left: 600px;
+    margin-left: 0;
+  }
+}
+
+/* Laptops */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .navbar .navbar-brand {
+    width: 10%;
+  }
+
+  .navbar .collapse {
+    margin-left: 500px;
+  }
+}
+
+/* Desktops */
+@media (min-width: 1281px) and (max-width: 1500px) {
+  .navbar .navbar-brand {
+    width: 5%;
+  }
+
+  .navbar .collapse {
+    margin-left: 795px;
   }
 }
