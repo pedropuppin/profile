@@ -38,14 +38,29 @@
   height: 100%;
 }
 
+.swiper .swiper-button-next,
+.swiper .swiper-button-prev{
+  color: #fff;
+}
+
+.swiper .swiper-button-next:after,
+.swiper .swiper-button-prev:after {
+  font-size: 35px;
+}
+
 .swiper-slide {
   text-align: center;
   font-size: 18px;
 }
 
-@media (max-width: 390px) {
+@media (min-width: 320px) and (max-width: 480px) {
   .swiper-wrapper {
     width: 390px;
     height: 390px;
+  }
+
+  .swiper .swiper-button-next:after,
+  .swiper .swiper-button-prev:after {
+    font-size: 20px;
   }
 }
