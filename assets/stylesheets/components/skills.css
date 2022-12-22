@@ -55,6 +55,12 @@
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
+  .skill {
+    padding: 50px 0 100px;
+    position: relative;
+    background-color: #121212;
+  }
+
   .swiper-wrapper {
     width: 390px;
     height: 390px;

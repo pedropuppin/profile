@@ -71,17 +71,17 @@ body[data-nav="true"] > #slider-toggle > .open {
 
 #curved-text {
   position:relative;
+  z-index: -1;
   bottom: 39px;
   left: -11px;
-  opacity: 1;
+  opacity: 0;
   color: #fff;
   font-size:15px;
-  transform: rotate(-50deg) translate(-19px, 1px) scale(0.5);
+  transform: rotate(-142deg) translate(-27px, -58px) scale(0.5);
   opacity: 0;
   transition: transform, opacity;
   transition-timing-function: ease;
   transition-duration: 400ms;
-  z-index: 4;
 }
 
 #curved-text > span {
@@ -91,6 +91,26 @@ body[data-nav="true"] > #slider-toggle > .open {
 
 body:not([data-nav="true"]) > #slider-toggle:hover > #curved-text{
   opacity: 1;
-  transform: rotate(-50deg) translate(-21px, -29px);
+  transform:  rotate(-48deg) translate(-20px, -29px);
   text-shadow: #fff 1px 0 10px;
+}
+
+/* Smartphones Mobiles */
+@media (min-width: 320px) and (max-width: 480px) {
+  #slider-toggle {
+    height: 4rem;
+    width: 4rem;
+    bottom: 4.3rem;
+  }
+
+  body:not([data-nav="true"]) > #slider-toggle:hover > #curved-text{
+    display: none;
+  }
+}
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 990px) {
+  body:not([data-nav="true"]) > #slider-toggle:hover > #curved-text{
+    display: none;
+  }
 }

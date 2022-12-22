@@ -23,16 +23,12 @@ body[data-nav="true"] > footer {
   display: none;
 }
 
-@media (max-width: 390px) {
+@media (min-width: 320px) and (max-width: 480px) {
   .footer img {
     width: 40%;
   }
 
-   .footer .social-icons {
-     margin: 0;
-   }
-
-   .footer p {
+   .footer p, .social-icons {
     display: none;
    }
  }

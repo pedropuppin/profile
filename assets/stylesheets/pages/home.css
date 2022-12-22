@@ -33,7 +33,7 @@ main {
 }
 
 body[data-nav="true"] > main {
-  transform: translateY(-28%);
+  transform: translateY(-40%);
 }
 
 body[data-nav="true"] {
