@@ -19,16 +19,16 @@ footer p {
   margin-top: 20px;
 }
 
-body[data-nav="true"] > footer {
-  display: none;
-}
-
 @media (min-width: 320px) and (max-width: 480px) {
-  .footer img {
+  footer img {
     width: 40%;
   }
 
-   .footer p, .social-icons {
+  footer p {
     display: none;
-   }
- }
+  }
+
+  footer .social-icons {
+    display: none;
+  }
+}

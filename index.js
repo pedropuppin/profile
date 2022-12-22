@@ -65,6 +65,7 @@ var typed = new Typed('#typed', {
 // btn toggle
 const toggleSlider = () => {
   document.body.dataset.nav = document.body.dataset.nav === "true" ? "false" : "true";
+  window.scrollTo(0, document.body.scrollHeight);
 }
 
 // curve text

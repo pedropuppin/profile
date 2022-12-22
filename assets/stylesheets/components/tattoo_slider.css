@@ -10,14 +10,64 @@
 
 #image-track {
   display: flex;
-  gap: 4vmin;
   position: absolute;
+  align-items: center;
+  gap: 4vmin;
   left: 50%;
   top: 50%;
   transform: translate(0%, 70%) scale(0.9);
   -webkit-user-select: none;
   pointer-events: none;
   transition: 500ms cubic-bezier(.13, .53, .38, .97);
+}
+
+#image-track > .arrow {
+  font-size: 32px;
+  margin-right: 50px;
+  animation: arrow 1s ease-in-out infinite;
+  margin-left: 9px;
+}
+
+@keyframes arrow {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(10px, 0);
+  }
+}
+
+#tattoo-slider > a {
+  font-size: 32px;
+  position: absolute;
+  text-decoration: none;
+  color: #fff;
+  bottom: 0;
+  opacity: 0;
+  left: 50%;
+  transform: translate(-50%, 70%) scale(0.9);
+  transition: 500ms cubic-bezier(.13, .53, .38, .97);
+}
+
+#tattoo-slider > a > .magic {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  background: linear-gradient(to top, #7638f9, #902ff0, #a526e6, #b61cdc, #c410d2, #de00be, #f200aa, #ff0097, #ff1775, #ff3c54, #ff5d33, #ff7a00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+body[data-nav="true"] > #tattoo-slider > a {
+  transform: translateX(-50%) scale(1);
+  padding-bottom: 40px;
+  opacity: 1;
+}
+
+body[data-nav="true"] > #tattoo-slider > a:hover {
+  transform: translateX(-50%) scale(1.04);
 }
 
 #image-track > .image {
@@ -31,9 +81,15 @@ body[data-nav="true"] > #tattoo-slider > #image-track {
   transform: translateY(-65%) scale(1);
 }
 
+/* Smartphones Mobiles */
 @media (min-width: 320px) and (max-width: 480px) {
   #image-track > .image {
-    width: 60vmin;
-    height: 76vmin;
+    width: 50vmin;
+    height: 66vmin;
+  }
+
+  #tattoo-slider > a {
+    font-size: 18px;
+    bottom: 160px;
   }
 }

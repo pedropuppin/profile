@@ -100,7 +100,7 @@ body:not([data-nav="true"]) > #slider-toggle:hover > #curved-text{
   #slider-toggle {
     height: 4rem;
     width: 4rem;
-    bottom: 4.3rem;
+    bottom: 4rem;
   }
 
   body:not([data-nav="true"]) > #slider-toggle:hover > #curved-text{
