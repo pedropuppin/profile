@@ -26,6 +26,7 @@
   grid-template-columns: 1fr 1fr;
   justify-items: center;
   gap: 20px;
+  -webkit-user-select: none;
 }
 
 .projects-container a img {
