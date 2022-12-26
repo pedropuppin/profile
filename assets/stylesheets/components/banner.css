@@ -74,9 +74,8 @@
 }
 
 .banner img {
-  width: 60%;
+  width: 65%;
   margin-left: 150px;
-  border-radius: 30px;
   animation: updown 3s linear infinite;
 }
 
@@ -107,7 +106,6 @@
     grid-template-columns: 1fr;
   }
  }
-
 
 @keyframes updown {
   0% {
