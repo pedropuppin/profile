@@ -62,18 +62,18 @@ var typed = new Typed('#typed', {
   loop: true
 });
 
-// btn toggle
-const toggleSlider = () => {
-  document.body.dataset.nav = document.body.dataset.nav === "true" ? "false" : "true";
-  window.scrollTo(0, document.body.scrollHeight);
-}
-
 // curve text
 const text = document.getElementById('curved-text');
 text.innerHTML = text.textContent.replace(/\S/g, "<span>$&</span>");
 const ele = text.querySelectorAll('span');
 for(var i = 0; i < ele.length; i++) {
-    ele[i].style.transform = "rotate("+i * 15.5 +"deg)";
+  ele[i].style.transform = "rotate("+i * 15.5 +"deg)";
+}
+
+// btn toggle
+const toggleSlider = () => {
+  document.body.dataset.nav = document.body.dataset.nav === "true" ? "false" : "true";
+  window.scrollTo(0, document.body.scrollHeight);
 }
 
 // tattoo slider
