@@ -14,8 +14,30 @@ body {
   font-weight: 400;
   overflow-x: hidden;
   position: relative;
+  background-color: black !important;
   color: #fff !important;
   font-family: 'Roboto', sans-serif !important;
+  margin: 0;
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+}
+
+body::-webkit-scrollbar {
+  display: none;  /* Safari and Chrome */
+}
+
+main {
+  position: relative;
+  z-index: 2;
+  transition: 500ms cubic-bezier(.36,.41,.14,.72);
+}
+
+body[data-nav="true"] > main {
+  transform: translateY(-40%);
+}
+
+body[data-nav="true"] {
+  overflow: hidden;
 }
 
 a:hover {

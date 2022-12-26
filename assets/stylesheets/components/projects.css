@@ -1,5 +1,5 @@
 .project {
-  padding: 110px 0 150px;
+  padding: 50px 0 150px;
   position: relative;
   background-image: linear-gradient(to top, #aa3673, #a52c7e, #9c248a, #8f2299, #7a25a8, #6429a1, #4e2b99, #372b90, #2d266f, #24204f, #1c1a30, #121212);
 }
@@ -26,6 +26,7 @@
   grid-template-columns: 1fr 1fr;
   justify-items: center;
   gap: 20px;
+  -webkit-user-select: none;
 }
 
 .projects-container a img {
@@ -87,7 +88,11 @@
 }
 
 
-  @media (max-width: 390px) {
+  @media (min-width: 320px) and (max-width: 480px) {
+    .project {
+      padding: 110px 0 150px;
+    }
+
     .projects-container {
       display: grid;
       grid-template-columns: 1fr;

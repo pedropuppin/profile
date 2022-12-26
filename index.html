@@ -17,170 +17,203 @@
     <script src="https://kit.fontawesome.com/b0ece19036.js" crossorigin="anonymous"></script>
   </head>
 
-  <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="assets/images/PPlogo.png" alt="PP logo"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#skills">Skills</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
-            </li>
-          </ul>
-          <span class="navbar-text">
-            <div class="nav-item social-icons">
-              <a class="nav-link" href="https://github.com/pedropuppin" target="_blank"><i class="fa-brands fa-github"></i></a>
-              <a class="nav-link" href="https://www.linkedin.com/in/pedro-puppin-82b770250/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-              <a class="nav-link" href="https://www.instagram.com/pedropuppintattoo/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            </div>
-          </span>
+  <body data-nav="false">
+    <main>
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="assets/images/PPlogo.png" alt="PP logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skills">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+              </li>
+            </ul>
+            <span class="navbar-text">
+              <div class="nav-item social-icons">
+                <a class="nav-link" href="https://github.com/pedropuppin" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a class="nav-link" href="https://www.linkedin.com/in/pedro-puppin-82b770250/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a class="nav-link" href="https://www.instagram.com/pedropuppintattoo/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+            </span>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
 
-    <!-- Banner -->
-    <div class="banner">
-      <div class="container">
-        <div class="infos-container align-items-center">
-          <div class="about-me">
-            <span class="tagline">Welcome to my portfolio</span>
-            <h1><span id="typed"></span></h1>
-            <p>
-              My name is Pedro Puppin and I'm a Full-Stack Web Developer with a bachelor degree in Product Design, experience in Graphic Design and in my free time I'm also a Tattoo Artist.
-              Proficiency in Ruby Language for Back-end aplications and HTML, CSS and JavaScript as Front-End technologies.
-            </p>
-            <a href="#projects">Projects<i class="fa-solid fa-arrow-down"></i></a>
-          </div>
-          <div class="profile-pic">
-            <img src="assets/images/pedro.jpg" alt="profile picture">
+      <!-- Banner -->
+      <div class="banner">
+        <div class="container">
+          <div class="infos-container align-items-center">
+            <div class="about-me">
+              <span class="tagline">Welcome to my portfolio</span>
+              <h1><span id="typed"></span></h1>
+              <p>
+                My name is Pedro Puppin and I'm a Full-Stack Web Developer with a bachelor degree in Product Design, experience in Graphic Design and in my free time I'm also a Tattoo Artist.
+                Proficiency in Ruby Language for Back-end aplications and HTML, CSS and JavaScript as Front-End technologies.
+              </p>
+              <a href="#projects">Projects<i class="fa-solid fa-arrow-down"></i></a>
+            </div>
+            <div class="profile-pic">
+              <img src="assets/images/CirclePic.png" alt="profile picture">
+            </div>
           </div>
         </div>
       </div>
+
+      <!-- Skills -->
+      <div class="skill" id="skills">
+        <div class="container">
+          <div class="skill-bx">
+            <h2>Skills</h2>
+            <p>My coding skills so far!</p>
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="assets/images/Ruby-logo.png" alt="Ruby Logo">
+                  <h5>Ruby</h5>
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/images/Rails-logo.png" alt="Rails Logo">
+                  <h5>Rails</h5>
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/images/Heroku-logo.png" alt="Heroku Logo">
+                  <h5>Heroku</h5>
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/images/Logo-js.png" alt="JavaScript Logo">
+                  <h5>JavaScript</h5>
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/images/html-logo.png" alt="HTML Logo">
+                  <h5>HTML</h5>
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/images/css-logo.png" alt="CSS Logo">
+                  <h5>CSS</h5>
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/images/SQL-logo.png" alt="SQL Logo">
+                  <h5>PostgreSQL</h5>
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/images/GIT-logo.png" alt="GIT Logo">
+                  <h5>GIT</h5>
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/images/Figma-logo.png" alt="Figma Logo">
+                  <h5>Figma</h5>
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/images/Illustrator-logo.png" alt="Illustrator Logo">
+                  <h5>Illustrator</h5>
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/images/ps-logo.png" alt="Photoshop Logo">
+                  <h5>Photoshop</h5>
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projects -->
+      <div class="project" id="projects">
+        <div class="container">
+          <div class=isVisible>
+            <h2>Projects</h2>
+            <p>My latest projects developed in Le Wagon's Full-Stack Web Development Bootcamp </p>
+            <div class="projects-container" id="projects-container">
+              <div class="main">
+                <div class="proj-imgbx" data-aos="zoom-in">
+                  <a href="https://github.com/pedropuppin/MyTattooProject" target="_blank">
+                    <img src="assets/images/MyTattoProject.jpg" alt="MyTattooProject">
+                    <div class="proj-txtx">
+                      <h4>My Tattoo Project</h4>
+                      <span>Final Le Wagon's Bootcamp project</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="second">
+                <div class="proj-imgbx" data-aos="zoom-in">
+                  <a href="https://github.com/pedropuppin/IlhasParadisiacas" target="_blank">
+                    <img src="assets/images/IlhasParadisiacas.jpg" alt="ilhas parasisiacas Project">
+                    <div class="proj-txtx">
+                      <h4>Ilhas Paradisíacas</h4>
+                      <span>Airbnb inspired project used to rent tropical islands.</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="proj-imgbx" data-aos="zoom-in">
+                  <a href="https://github.com/pedropuppin/rails-watch-list" target="_blank">
+                    <img src="assets/images/Rails-WatchList.jpg" alt="watch list">
+                    <div class="proj-txtx">
+                      <h4>Rails Watch List</h4>
+                      <span>App to create movie lists. First functional project using Rails!</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col">
+              <img class="img-footer" src="assets/images/PPlogo.png" alt="">
+            </div>
+            <div class="col text-center text-sm-end footer-text">
+              <div class="social-icons">
+                <a class="nav-link" href="https://github.com/pedropuppin" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a class="nav-link" href="https://www.linkedin.com/in/pedro-puppin-82b770250/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a class="nav-link" href="https://www.instagram.com/pedropuppintattoo/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+              <p>Powered by Le Wagon</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+
+    <button id="slider-toggle" type="button" onclick="toggleSlider()">
+      <div id="curved-text">tattoos</div>
+      <i class="open blink fa-solid fa-chevron-up"></i>
+      <i class="close fa-solid fa-xmark"></i>
+    </button>
+
+
+    <div id="tattoo-slider">
+      <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
+        <i class="fa-solid fa-arrow-left arrow"></i>
+        <img class="image" src="assets/images/TatMuniz-1.jpg" alt="" draggable="false">
+        <img class="image" src="assets/images/TatSakura-1.jpg" alt="" draggable="false">
+        <img class="image" src="assets/images/TatLuisinha-1.jpg" alt="" draggable="false">
+        <img class="image" src="assets/images/TatAbdack-1.jpg" alt="" draggable="false">
+        <img class="image" src="assets/images/TatGatos-1.jpg" alt="" draggable="false">
+        <img class="image" src="assets/images/Tatnanda-1.jpg" alt="" draggable="false">
+        <img class="image" src="assets/images/TatCarol-1.jpg" alt="" draggable="false">
+        <img class="image" src="assets/images/TatDino-1.jpg" alt="" draggable="false">
+      </div>
+      <a href="https://www.instagram.com/pedropuppintattoo/" target="_blank">See more on <span class="magic">Instagram</span></a>
     </div>
-
-    <!-- Skills -->
-    <div class="skill" id="skills">
-      <div class="container">
-        <div class="skill-bx">
-          <h2>Skills</h2>
-          <p>My coding skills so far!</p>
-          <div class="swiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img src="assets/images/Ruby-logo.png" alt="Ruby Logo">
-                <h5>Ruby</h5>
-              </div>
-              <div class="swiper-slide">
-                <img src="assets/images/Rails-logo.png" alt="Rails Logo">
-                <h5>Rails</h5>
-              </div>
-              <div class="swiper-slide">
-                <img src="assets/images/Heroku-logo.png" alt="Heroku Logo">
-                <h5>Heroku</h5>
-              </div>
-              <div class="swiper-slide">
-                <img src="assets/images/Logo-js.png" alt="JavaScript Logo">
-                <h5>JavaScript</h5>
-              </div>
-              <div class="swiper-slide">
-                <img src="assets/images/html-logo.png" alt="HTML Logo">
-                <h5>HTML</h5>
-              </div>
-              <div class="swiper-slide">
-                <img src="assets/images/css-logo.png" alt="CSS Logo">
-                <h5>CSS</h5>
-              </div>
-              <div class="swiper-slide">
-                <img src="assets/images/SQL-logo.png" alt="SQL Logo">
-                <h5>PostgreSQL</h5>
-              </div>
-              <div class="swiper-slide">
-                <img src="assets/images/GIT-logo.png" alt="GIT Logo">
-                <h5>GIT</h5>
-              </div>
-              <div class="swiper-slide">
-                <img src="assets/images/Figma-logo.png" alt="Figma Logo">
-                <h5>Figma</h5>
-              </div>
-            </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Projects -->
-    <div class="project" id="projects">
-      <div class="container">
-        <div class=isVisible>
-          <h2>Projects</h2>
-          <p>My latest projects developed in Le Wagon's Full-Stack Web Development Bootcamp </p>
-          <div class="projects-container" id="projects-container">
-            <div class="main">
-              <div class="proj-imgbx" data-aos="zoom-in">
-                <a href="https://github.com/pedropuppin/MyTattooProject" target="_blank">
-                  <img src="assets/images/MyTattoProject.jpg" alt="MyTattooProject">
-                  <div class="proj-txtx">
-                    <h4>My Tattoo Project</h4>
-                    <span>Final Le Wagon's Bootcamp project</span>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="second">
-              <div class="proj-imgbx" data-aos="zoom-in">
-                <a href="https://github.com/pedropuppin/IlhasParadisiacas" target="_blank">
-                  <img src="assets/images/IlhasParadisiacas.jpg" alt="ilhas parasisiacas Project">
-                  <div class="proj-txtx">
-                    <h4>Ilhas Paradisíacas</h4>
-                    <span>Airbnb inspired project used to rent tropical islands.</span>
-                  </div>
-                </a>
-              </div>
-              <div class="proj-imgbx" data-aos="zoom-in">
-                <a href="https://github.com/pedropuppin/rails-watch-list" target="_blank">
-                  <img src="assets/images/Rails-WatchList.jpg" alt="watch list">
-                  <div class="proj-txtx">
-                    <h4>Rails Watch List</h4>
-                    <span>App to create movie lists. First functional project using Rails!</span>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col">
-            <img src="assets/images/PPlogo.png" alt="">
-          </div>
-          <div class="col text-center text-sm-end">
-            <div class="social-icons">
-              <a class="nav-link" href="https://github.com/pedropuppin" target="_blank"><i class="fa-brands fa-github"></i></a>
-              <a class="nav-link" href="https://www.linkedin.com/in/pedro-puppin-82b770250/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-              <a class="nav-link" href="https://www.instagram.com/pedropuppintattoo/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            </div>
-            <p>Powered by Le Wagon</p>
-          </div>
-        </div>
-      </div>
-    </footer>
 
     <!-- Script import-->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
