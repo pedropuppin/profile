@@ -106,11 +106,19 @@ body:not([data-nav="true"]) > #slider-toggle:hover > #curved-text{
   body:not([data-nav="true"]) > #slider-toggle:hover > #curved-text{
     display: none;
   }
+
+  #slider-toggle {
+    display: none;
+  }
 }
 
 /* Tablets */
 @media (min-width: 768px) and (max-width: 990px) {
   body:not([data-nav="true"]) > #slider-toggle:hover > #curved-text{
+    display: none;
+  }
+
+  #slider-toggle {
     display: none;
   }
 }
